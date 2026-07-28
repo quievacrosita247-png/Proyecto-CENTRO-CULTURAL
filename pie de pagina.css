@@ -1,0 +1,459 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #6f4e37; /* color café */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: 'Verdana', sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: #d2691e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #6f4e37;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+    background-color: rgb(199, 194, 127);
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+menu ul,li {
+ position: relative;
+}
+
+menu ul,li a{
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background color 0.3s case;
+}
+.menu ul li a:hover{
+    background-color: rgb(131, 95, 29);
+}
+#check-menu { display: none; }
+.btn-menu { display: none; cursor: pointer; font-size: 25px; padding: 10px; }
+
+@media (max-width: 700px) {
+  .btn-menu { display: block; } 
+  
+
+  #check-menu:checked ~ ul {
+    display: flex;
+  }
+}
+
+/*formulario*/
+/* --- Contenedor General del Formulario --- */
+.seccion-formulario {
+    padding: 50px 20px;
+    background-color: #f7f4ed; /* Mantiene la misma armonía de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- La Tarjeta Estilo Pergamino --- */
+.formulario-tarjeta {
+    background-color: #61f0dd;
+    border: 2px solid #dcd3c1;
+    border-radius: 15px;
+    padding: 35px;
+    width: 100%;
+    max-width: 600px; /* Ancho perfecto para que no luzca estirado */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Encabezado del Formulario --- */
+.formulario-encabezado {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formulario-encabezado h2 {
+    color: #4a2c2a;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.formulario-encabezado p {
+    color: #777;
+    font-size: 13px;
+}
+
+/* --- Grupos de Campos --- */
+.grupo-input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grupo-input label {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* --- Campos de Texto, Select y Textarea Modernos --- */
+.grupo-input input,
+.grupo-input select,
+.grupo-input textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background-color: #faf8f5;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.grupo-input input:focus,
+.grupo-input select:focus,
+.grupo-input textarea:focus {
+    outline: none;
+    border-color: #a36b39; /* Color terracota de tus botones superiores */
+    box-shadow: 0 0 5px rgba(163, 107, 57, 0.3);
+    background-color: #ffffff;
+}
+
+/* --- Botón de Enviar Estilizado --- */
+.centrar-boton {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.boton-enviar {
+    background-color: #a36b39; /* Mismo color terracota de los botones de talleres */
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.boton-enviar:hover {
+    background-color: #82522a;
+    transform: translateY(-2px);
+}
+
+/*Boton*/
+.boton-regresar {
+    display: inline-block;
+    background-color: #a36b39; /* El color terracota de tu diseño */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.2s;
+    margin: 20px 0;
+}
+
+.boton-regresar:hover {
+    background-color: #82522a;
+    transform: translateY(-2px);
+}
+
+/*historia*/
+/* --- Estructura General de la Sección --- */
+.seccion-historia {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.historia-titulo-principal {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.historia-titulo-principal h2 {
+    color: #4a2c2a; /* Tono terracota oscuro */
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.linea-decorativa {
+    width: 60px;
+    height: 3px;
+    background-color: #a36b39;
+    margin: 8px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* --- Caja de Texto Principal (Estilo Pergamino Limpio) --- */
+.historia-caja-texto {
+    background-color: #eff876;
+    border: 2px solid #21475e;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.historia-caja-texto p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.historia-caja-texto p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Estilo Moderno para la Tabla --- */
+.historia-contenedor-tabla {
+    margin-bottom: 40px;
+}
+
+.historia-contenedor-tabla h3,
+.historia-lista-enlaces h3 {
+    color: #4a2c2a;
+    font-size: 20px;
+    margin-bottom: 15px;
+    border-left: 4px solid #a36b39;
+    padding-left: 10px;
+}
+
+.tabla-cultural {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e7f37d;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border: 1px solid #dcd3c1;
+}
+
+.tabla-cultural th {
+    background-color: #a36b39;
+    color: #ffffff;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.tabla-cultural td {
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #444;
+    border-bottom: 1px solid #f0eae1;
+}
+
+.tabla-cultural tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-cultural tr:hover {
+    background-color: #faf8f5;
+}
+
+/* --- Lista de Enlaces Inferior --- */
+.historia-lista-enlaces {
+    background-color: #edf888;
+    border: 2px solid #dcd3c1;
+    border-radius: 12px;
+    padding: 25px 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.historia-lista-enlaces ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.historia-lista-enlaces li {
+    margin-bottom: 12px;
+}
+
+.historia-lista-enlaces li:last-child {
+    margin-bottom: 0;
+}
+
+.historia-lista-enlaces a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.historia-lista-enlaces a:hover {
+    background-color: #f7f4ed;
+    color: #a36b39;
+    transform: translateX(5px);
+}
+
+/*Contacto*/
+/* Estilos generales de la página y tipografía */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1ea; /* Un fondo sutil y elegante */
+    color: #333333;
+}
+
+header {
+    background-color: #4a2e18;
+    color: white;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #8c7853;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+}
+
+nav a.activo, nav a:hover {
+    text-decoration: underline;
+}
+
+/* Diseño creativo para la sección de contacto */
+.contacto-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.contacto-intro h2 {
+    color: #4a2e18;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.contacto-intro p {
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de tarjetas en columnas flexibles */
+.tarjetas-contacto {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Estilo individual de cada tarjeta informativa */
+.tarjeta {
+    background-color: #84f584;
+    border-top: 4px solid #8c7853;
+    border-radius: 8px;
+    padding: 30px 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta .icono {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.tarjeta h3 {
+    color: #4a2e18;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.tarjeta p {
+    color: #555555;
+    font-size: 14px;
+    margin: 0;
+}
+
+.sub-texto {
+    display: block;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #8c7853;
+    font-weight: bold;
+}

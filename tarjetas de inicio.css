@@ -1,0 +1,89 @@
+/* --- Estilos para la Sección de Tarjetas --- */
+.seccion-tarjetas-creativas {
+    padding: 40px 20px;
+    background-color: #f7f4ed; /* Tono pergamino claro muy acorde a tu diseño */
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.titulo-seccion h2 {
+    font-size: 26px;
+    color: #4a2c2a; /* Tono marrón oscuro institucional */
+    margin-bottom: 5px;
+}
+
+.titulo-seccion p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* --- Contenedor en Fila --- */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap; /* Se adapta a pantallas pequeñas */
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- Diseño de cada Tarjeta --- */
+.tarjeta-estilo {
+    background-color: #72e7ce;
+    border: 2px solid #58a9bd; /* Borde estilo rústico elegante */
+    border-radius: 12px;
+    padding: 25px 20px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tarjeta-estilo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Iconos y Textos internos --- */
+.icono-tarjeta {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-estilo h3 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.tarjeta-estilo p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Empuja el botón siempre hacia abajo */
+}
+
+.fecha-evento {
+    font-weight: bold;
+    color: #8c5a2c;
+}
+
+/* --- Estilo de los Botones --- */
+.boton-tarjeta {
+    display: inline-block;
+    background-color: #a36b39; /* Tono terracota elegante */
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.boton-tarjeta:hover {
+    background-color: #82522a;
+}
