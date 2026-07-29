@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #6f4e37; /* color café */
+    background-color: #6f4e37; 
     color: white;
     padding: 20px;
     text-align: center;
@@ -96,27 +96,26 @@ menu ul,li a{
 }
 
 /*formulario*/
-/* --- Contenedor General del Formulario --- */
 .seccion-formulario {
     padding: 50px 20px;
-    background-color: #f7f4ed; /* Mantiene la misma armonía de fondo */
+    background-color: #f7f4ed; 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* --- La Tarjeta Estilo Pergamino --- */
+
 .formulario-tarjeta {
-    background-color: #61f0dd;
+    background-color: #ebfd99;
     border: 2px solid #dcd3c1;
     border-radius: 15px;
     padding: 35px;
     width: 100%;
-    max-width: 600px; /* Ancho perfecto para que no luzca estirado */
+    max-width: 600px; 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
 }
 
-/* --- Encabezado del Formulario --- */
+
 .formulario-encabezado {
     text-align: center;
     margin-bottom: 25px;
@@ -133,7 +132,7 @@ menu ul,li a{
     font-size: 13px;
 }
 
-/* --- Grupos de Campos --- */
+
 .grupo-input {
     margin-bottom: 20px;
     display: flex;
@@ -147,7 +146,6 @@ menu ul,li a{
     margin-bottom: 8px;
 }
 
-/* --- Campos de Texto, Select y Textarea Modernos --- */
 .grupo-input input,
 .grupo-input select,
 .grupo-input textarea {
@@ -164,19 +162,18 @@ menu ul,li a{
 .grupo-input select:focus,
 .grupo-input textarea:focus {
     outline: none;
-    border-color: #a36b39; /* Color terracota de tus botones superiores */
+    border-color: #a36b39; 
     box-shadow: 0 0 5px rgba(163, 107, 57, 0.3);
     background-color: #ffffff;
 }
 
-/* --- Botón de Enviar Estilizado --- */
 .centrar-boton {
     text-align: center;
     margin-top: 10px;
 }
 
 .boton-enviar {
-    background-color: #a36b39; /* Mismo color terracota de los botones de talleres */
+    background-color: #a36b39; 
     color: #ffffff;
     border: none;
     padding: 10px 30px;
@@ -195,7 +192,7 @@ menu ul,li a{
 /*Boton*/
 .boton-regresar {
     display: inline-block;
-    background-color: #a36b39; /* El color terracota de tu diseño */
+    background-color: #a36b39;
     color: #ffffff;
     padding: 10px 20px;
     border: none;
@@ -215,7 +212,6 @@ menu ul,li a{
 }
 
 /*historia*/
-/* --- Estructura General de la Sección --- */
 .seccion-historia {
     max-width: 1000px;
     margin: 40px auto;
@@ -230,7 +226,7 @@ menu ul,li a{
 }
 
 .historia-titulo-principal h2 {
-    color: #4a2c2a; /* Tono terracota oscuro */
+    color: #4a2c2a; 
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -244,7 +240,7 @@ menu ul,li a{
     border-radius: 2px;
 }
 
-/* --- Caja de Texto Principal (Estilo Pergamino Limpio) --- */
+
 .historia-caja-texto {
     background-color: #eff876;
     border: 2px solid #21475e;
@@ -265,7 +261,7 @@ menu ul,li a{
     margin-bottom: 0;
 }
 
-/* --- Estilo Moderno para la Tabla --- */
+
 .historia-contenedor-tabla {
     margin-bottom: 40px;
 }
@@ -312,7 +308,7 @@ menu ul,li a{
     background-color: #faf8f5;
 }
 
-/* --- Lista de Enlaces Inferior --- */
+
 .historia-lista-enlaces {
     background-color: #edf888;
     border: 2px solid #dcd3c1;
@@ -353,11 +349,10 @@ menu ul,li a{
 }
 
 /*Contacto*/
-/* Estilos generales de la página y tipografía */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f1ea; /* Un fondo sutil y elegante */
+     background-color: #f4f1ea; 
     color: #333333;
 }
 
@@ -390,7 +385,6 @@ nav a.activo, nav a:hover {
     text-decoration: underline;
 }
 
-/* Diseño creativo para la sección de contacto */
 .contacto-container {
     max-width: 1000px;
     margin: 40px auto;
@@ -410,7 +404,6 @@ nav a.activo, nav a:hover {
     margin-bottom: 40px;
 }
 
-/* Contenedor de tarjetas en columnas flexibles */
 .tarjetas-contacto {
     display: flex;
     justify-content: space-around;
@@ -418,7 +411,6 @@ nav a.activo, nav a:hover {
     flex-wrap: wrap;
 }
 
-/* Estilo individual de cada tarjeta informativa */
 .tarjeta {
     background-color: #84f584;
     border-top: 4px solid #8c7853;
