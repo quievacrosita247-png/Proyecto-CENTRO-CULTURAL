@@ -83,15 +83,56 @@ menu ul,li a{
 .menu ul li a:hover{
     background-color: rgb(131, 95, 29);
 }
-#check-menu { display: none; }
-.btn-menu { display: none; cursor: pointer; font-size: 25px; padding: 10px; }
 
-@media (max-width: 700px) {
-  .btn-menu { display: block; } 
+  .menu a {
+    padding: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+
+
+
+.menu {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #d2c8b4; 
+}
+
+
+.menu li {
+  flex: 1 1 auto; 
+  min-width: 1px; 
+  text-align: center;
+}
+
+
+.menu li a {
+  display: block;
+  padding: 10px 1px;
+  color: #554842;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Efecto al pasar el mouse */
+.menu li a:hover {
+  background-color: #c1b6a2;
+}
+
+/* --- PARA CELULARES O VENTANAS MUY PEQUEÑAS --- */
+@media (max-width: 200px) {
+  .menu {
+    flex-direction: column; /* Se colocan uno debajo del otro en columna */
+  }
   
-
-  #check-menu:checked ~ ul {
-    display: flex;
+  .menu li {
+    width: 100%;
+    border-bottom: 1px solid #bdae99; /* Línea separadora entre opciones */
   }
 }
 
